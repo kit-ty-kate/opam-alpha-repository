@@ -6,7 +6,7 @@ bug-reports: "https://gitlab.camlcity.org/gerd/lib-ocamlnet3/issues"
 dev-repo: "git+https://gitlab.camlcity.org/gerd/lib-ocamlnet3.git"
 build: [
   [
-    "./configure"
+    "./build.sh"
     "-bindir"
     bin
     "-%{conf-gssapi:enable}%-gssapi"
@@ -16,36 +16,8 @@ build: [
     "-%{camlzip:enable}%-zip"
     "-with-nethttpd"
   ]
-  [make "all"]
-  [make "opt"]
 ]
 authors: ["Gerd Stolpmann"]
-remove: [
-  ["ocamlfind" "remove" "equeue"]
-  ["ocamlfind" "remove" "equeue-gtk2"] {"%{lablgtk:installed}%"}
-  ["ocamlfind" "remove" "netcamlbox"]
-  ["ocamlfind" "remove" "netcgi2"]
-  ["ocamlfind" "remove" "netcgi2-plex"]
-  ["ocamlfind" "remove" "netclient"]
-  ["ocamlfind" "remove" "netgss-system"] {"%{conf-gssapi:installed}%"}
-  ["ocamlfind" "remove" "nethttpd"]
-  ["ocamlfind" "remove" "netmulticore"]
-  ["ocamlfind" "remove" "netplex"]
-  ["ocamlfind" "remove" "netshm"]
-  ["ocamlfind" "remove" "netstring"]
-  ["ocamlfind" "remove" "netstring-pcre"] {"%{pcre:installed}%"}
-  ["ocamlfind" "remove" "netsys"]
-  ["ocamlfind" "remove" "nettls-gnutls"] {"%{conf-gnutls:installed}%"}
-  ["ocamlfind" "remove" "netunidata"]
-  ["ocamlfind" "remove" "netzip"] {"%{camlzip:installed}%"}
-  ["ocamlfind" "remove" "pop"]
-  ["ocamlfind" "remove" "rpc"]
-  ["ocamlfind" "remove" "rpc-auth-local"]
-  ["ocamlfind" "remove" "rpc-generator"]
-  ["ocamlfind" "remove" "shell"]
-  ["ocamlfind" "remove" "smtp"]
-
-]
 depends: [
   "ocaml" {>= "4.00.0"}
   "ocamlfind"
@@ -59,7 +31,7 @@ depopts: [
   "pcre"
   "camlzip"
 ]
-install: [make "install"]
+install: ["./install.sh"]
 synopsis:
   "Internet protocols (HTTP, CGI, e-mail etc.) and helper data structures"
 description: """
@@ -76,8 +48,6 @@ conflicts: [
   "ocaml-variants"
     {= "4.04.0+flambda" | = "4.04.1+flambda" | = "4.04.2+flambda"}
 ]
-flags: light-uninstall
-extra-files: ["ocamlnet.install" "md5=ed54a9f3d6382ccc01ea1cf1af8f2c38"]
 url {
   src: "https://gitlab.com/kit-ty-kate/lib-ocamlnet3/-/archive/ocaml-4.10/lib-ocamlnet3-ocaml-4.10.tar.gz"
 }
