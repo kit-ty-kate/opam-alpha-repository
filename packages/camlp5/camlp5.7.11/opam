@@ -30,7 +30,7 @@ dev-repo: "git+https://github.com/camlp5/camlp5.git"
 doc: "https://camlp5.github.io/doc/html"
 
 depends: [
-  "ocaml"       { >= "4.02" }
+  "ocaml"       { = "4.10.0" }
 ]
 
 build: [
@@ -44,5 +44,5 @@ remove: [
   [ "rm" "-f" "%{man}%/man1/camlp5.1" "%{man}%/man1/camlp5o.1" "%{man}%/man1/camlp5o.opt.1" "%{man}%/man1/camlp5r.1" "%{man}%/man1/camlp5r.opt.1" "%{man}%/man1/camlp5sch.1" "%{man}%/man1/mkcamlp5.1" "%{man}%/man1/mkcamlp5.opt.1" "%{man}%/man1/ocpp5.1" ]
 ]
 url {
-  src: "https://github.com/chetmurthy/camlp5/archive/4.10_patches.tar.gz"
+  src: "https://github.com/kit-ty-kate/camlp5/archive/410.tar.gz"
 }
