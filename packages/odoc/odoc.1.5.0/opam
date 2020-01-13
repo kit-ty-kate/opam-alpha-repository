@@ -39,5 +39,5 @@ build: [
 ]
 
 url {
-  src: "https://github.com/kit-ty-kate/odoc/archive/410.tar.gz"
+  src: "https://github.com/jonludlam/odoc/archive/4.10-compatibility.tar.gz"
 }
