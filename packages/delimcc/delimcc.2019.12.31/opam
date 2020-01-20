@@ -3,7 +3,6 @@ maintainer: "gabriel.scherer@gmail.com"
 authors: ["Oleg Kiselyov"]
 homepage: "http://okmij.org/ftp/continuations/implementations.html#caml-shift"
 license: "MIT"
-patches: ["ocaml-410.patch"]
 build: [
   [make "all"]
   [make "opt"]
@@ -16,7 +15,6 @@ install: [make "findlib-install"]
 synopsis:
   "Oleg's delimited continuations library for byte-code and native OCaml"
 conflicts: ["ocaml-system"]
-extra-files: ["ocaml-410.patch" "md5=c96ee4f2a5355891f98f14e4c3ddd573"]
 url {
   src: "http://okmij.org/ftp/continuations/caml-shift-20180316.tar.gz"
   checksum: "md5=dce59255992c35305d4940e7a2da1d3a"
