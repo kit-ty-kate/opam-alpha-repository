@@ -49,5 +49,5 @@ conflicts: [
     {= "4.04.0+flambda" | = "4.04.1+flambda" | = "4.04.2+flambda"}
 ]
 url {
-  src: "https://gitlab.com/octachron/lib-ocamlnet3/-/archive/ocaml-4.10/lib-ocamlnet3-ocaml-4.10.tar.gz"
+  src: "https://gitlab.com/octachron/lib-ocamlnet3/-/archive/410_alt/lib-ocamlnet3-ocaml-4.10.tar.gz"
 }
