@@ -21,5 +21,5 @@ depends: [
   "links"
 ]
 url {
-  src: "https://github.com/kit-ty-kate/links/archive/410.tar.gz"
+  src: "https://github.com/kit-ty-kate/links/archive/410-rc1.tar.gz"
 }
