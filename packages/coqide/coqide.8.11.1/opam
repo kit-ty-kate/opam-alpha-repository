@@ -44,5 +44,5 @@ extra-files: [
 ]
 
 url {
-  src: "https://github.com/Octachron/coq/archive/410_alt.tar.gz"
+  src: "https://github.com/coq/coq/archive/v8.11.tar.gz"
 }
