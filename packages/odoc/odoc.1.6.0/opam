@@ -44,5 +44,5 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
 ]
 url {
-  src: "https://github.com/kit-ty-kate/odoc/411.tar.gz"
+  src: "https://github.com/ocaml/odoc/master.tar.gz"
 }
