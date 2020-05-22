@@ -19,10 +19,10 @@ depends: [
   "ppxfind"  {build}
   "ocaml-migrate-parsetree"
   "ppx_derivers"
-  "ppxlib"  {>= "0.9.0"}
+  "ppx_tools"  {>= "4.02.3"}
   "result"
   "ounit"      {with-test}
-  "ocaml" {>= "4.05.0"}
+  "ocaml" {>= "4.02.2" & < "4.12.0"}
 ]
 synopsis: "Type-driven code generation for OCaml >=4.02.2"
 description: """
@@ -31,5 +31,5 @@ code based on type definitions, and a set of useful plugins
 for common tasks.
 """
 url {
-  src: "https://github.com/thierry-martinez/ppx_deriving/archive/only_convert_needed_parts_of_the_AST_instead_of_converting_mapper.tar.gz"
+  src: "https://github.com/kit-ty-kate/ppx_deriving/archive/411.tar.gz"
 }

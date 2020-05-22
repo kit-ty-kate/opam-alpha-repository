@@ -15,9 +15,11 @@ depends: [
   "ocaml" {>= "4.04.0" & < "4.12.0"}
   "yojson" {>= "1.6.0" & < "2.0.0"}
   "result"
-  "ppx_deriving" {>= "4.5.0" & < "5.0"}
-  "ppxlib" {>= "0.9.0"}
+  "ppx_deriving" {>= "4.0" & < "5.0"}
+  "ppx_tools"    {build}
+  "ppxfind"      {build}
   "dune"         {>= "1.2"}
+  "cppo"         {build}
   "ounit"        {with-test & >= "2.0.0"}
 ]
 conflicts: [
@@ -28,5 +30,5 @@ description: """
 ppx_deriving_yojson is a ppx_deriving plugin that provides
 a JSON codec generator."""
 url {
-  src: "https://github.com/thierry-martinez/ppx_deriving_yojson/archive/411.tar.gz"
+  src: "https://github.com/kit-ty-kate/ppx_deriving_yojson/archive/411.tar.gz"
 }
