@@ -21,6 +21,7 @@ depends: [
   "cppo" {build}
   "astring"
   "logs"
+  "odoc"
   "cmdliner"
   "re" {>= "1.7.2"}
   "result"
