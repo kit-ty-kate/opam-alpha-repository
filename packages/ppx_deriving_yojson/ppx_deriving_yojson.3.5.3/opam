@@ -30,5 +30,5 @@ description: """
 ppx_deriving_yojson is a ppx_deriving plugin that provides
 a JSON codec generator."""
 url {
-  src: "https://github.com/kit-ty-kate/ppx_deriving_yojson/archive/411.tar.gz"
+  src: "https://github.com/ocaml-ppx/ppx_deriving_yojson/archive/pre-ppxlib.tar.gz"
 }

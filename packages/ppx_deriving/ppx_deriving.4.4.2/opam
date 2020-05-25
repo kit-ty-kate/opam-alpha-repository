@@ -31,5 +31,5 @@ code based on type definitions, and a set of useful plugins
 for common tasks.
 """
 url {
-  src: "https://github.com/kit-ty-kate/ppx_deriving/archive/411.tar.gz"
+  src: "https://github.com/ocaml-ppx/ppx_deriving/archive/pre-ppxlib.tar.gz"
 }
