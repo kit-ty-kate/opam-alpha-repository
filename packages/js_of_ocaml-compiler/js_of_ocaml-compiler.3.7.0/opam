@@ -30,5 +30,5 @@ conflicts: [
   "js_of_ocaml" {< "3.0"}
 ]
 url {
-  src: "https://github.com/ocsigen/js_of_ocaml/archive/master.tar.gz"
+  src: "https://github.com/kit-ty-kate/js_of_ocaml/archive/fix-1022.tar.gz"
 }
