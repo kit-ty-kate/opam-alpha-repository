@@ -20,7 +20,7 @@ depends: [
   "cmdliner"
   "ocaml-migrate-parsetree"
   "yojson" # It's optional, but we want users to be able to use source-map without pain.
-  "menhirLib"
+  "menhir"
 ]
 
 depopts: [ "ocamlfind" ]
