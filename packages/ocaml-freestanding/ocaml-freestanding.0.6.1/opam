@@ -6,7 +6,7 @@ bug-reports: "https://github.com/mirage/ocaml-freestanding/issues/"
 license: "MIT"
 tags: "org:mirage"
 dev-repo: "git+https://github.com/mirage/ocaml-freestanding.git"
-build: [make]
+build: [make "PREFIX=%{prefix}%"]
 install: [make "install" "PREFIX=%{prefix}%"]
 remove: [make "uninstall" "PREFIX=%{prefix}%"]
 depends: [
@@ -35,6 +35,5 @@ synopsis: "Freestanding OCaml runtime"
 description:
   "This package provides a freestanding OCaml runtime (asmrun), suitable for linking with a unikernel base layer."
 url {
-  src: "https://github.com/mirage/ocaml-freestanding/archive/v0.6.0.tar.gz"
-  checksum: "sha512=4c5de564bbcc89f98afe4999d22cc5c0d8310670c764fcf86d3eac59ce8ea40e2faa700976758bb1159df097f1beb61327223753c352fac3970752b5ae1bd844"
+  src: "https://github.com/kit-ty-kate/ocaml-freestanding/archive/411.tar.gz"
 }
