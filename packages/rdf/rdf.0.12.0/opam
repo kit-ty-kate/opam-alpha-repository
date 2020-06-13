@@ -32,6 +32,7 @@ depends: [
   "calendar" {>= "2.03.2"}
   "uutf" {>= "1.0.0"}
   "jsonm" {>= "1.0.0"}
+  "ptime" {>= "0.8.0"}
   "ocaml-migrate-parsetree" {>= "1.5.0"}
 ]
 depopts: ["mysql" "postgresql" "cohttp" "lwt"]
