@@ -1,36 +1,34 @@
 opam-version: "2.0"
-maintainer: "whitequark <whitequark@whitequark.org>"
-authors: [ "whitequark <whitequark@whitequark.org>" ]
+version: "2.0"
+synopsis: "A sample syntax extension using OCaml's new extension points API"
+maintainer: ["whitequark <whitequark@whitequark.org>"]
+authors: ["whitequark <whitequark@whitequark.org>"]
 license: "Public domain"
-homepage: "https://github.com/whitequark/ppx_getenv"
-bug-reports: "https://github.com/whitequark/ppx_getenv/issues"
-dev-repo: "git://github.com/whitequark/ppx_getenv.git"
-tags: [ "syntax" ]
-substs: [ "pkg/META" ]
-build: [
-  [
-    "ocaml"
-    "pkg/build.ml"
-    "native=%{ocaml:native}%"
-    "native-dynlink=%{ocaml:native-dynlink}%"
-  ]
-  [
-    "ocamlbuild"
-    "-classic-display"
-    "-use-ocamlfind"
-    "src_test/test_ppx_getenv.byte"
-    "--"
-  ] {with-test}
-]
+tags: ["syntax"]
+homepage: "https://github.com/ocaml-ppx/ppx_getenv"
+bug-reports: "https://github.com/ocaml-ppx/ppx_getenv/issues"
 depends: [
+  "dune" {>= "2.0"}
   "ocaml" {>= "4.02.0"}
-  "cppo" {build}
-  "cppo_ocamlbuild" {build}
-  "ppx_tools" {>= "0.99.1"}
-  "ounit" {with-test}
+  "ocaml-migrate-parsetree" {>= "1.7.0"}
+  "ounit2" {with-test}
+  "odoc" {with-doc}
 ]
-synopsis:
-  "A sample syntax extension that uses OCaml's new extension points API"
+build: [
+  ["dune" "subst"] {pinned}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/ocaml-ppx/ppx_getenv.git"
 url {
-  src: "https://github.com/kit-ty-kate/ppx_getenv/archive/411.tar.gz"
+  src: "https://github.com/ocaml-ppx/ppx_getenv/archive/master.tar.gz"
 }
