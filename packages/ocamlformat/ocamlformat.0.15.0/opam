@@ -31,5 +31,5 @@ depends: [
 synopsis: "Auto-formatter for OCaml code"
 description: "OCamlFormat is a tool to automatically format OCaml code in a uniform style."
 url {
-  src: "https://github.com/kit-ty-kate/ocamlformat/archive/411.tar.gz"
+  src: "https://github.com/ocaml/ocamlformat/archive/master.tar.gz"
 }
