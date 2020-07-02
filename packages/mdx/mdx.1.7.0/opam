@@ -48,5 +48,5 @@ in the documentation always stays up-to-date.
 the same, mdx being the deprecated name, kept for now for compatibility.
 """
 url {
-  src: "https://github.com/kit-ty-kate/mdx/archive/411.tar.gz"
+  src: "https://github.com/realworldocaml/mdx/archive/master.tar.gz"
 }
