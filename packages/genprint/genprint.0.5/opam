@@ -26,5 +26,5 @@ depends: [
 ]
 
 url {
-  src: "https://github.com/kit-ty-kate/genprintlib/archive/master.tar.gz"
+  src: "https://github.com/kit-ty-kate/genprintlib/archive/411.tar.gz"
 }
