@@ -7,7 +7,7 @@ bug-reports: "https://gitlab.camlcity.org/gerd/lib-ocamlnet3/issues"
 dev-repo: "git+https://gitlab.camlcity.org/gerd/lib-ocamlnet3.git"
 build: [
   [
-    "./configure"
+    "./build.sh"
     "-bindir"
     bin
     "-%{conf-gssapi:enable}%-gssapi"
@@ -17,8 +17,6 @@ build: [
     "-%{camlzip:enable}%-zip"
     "-with-nethttpd"
   ]
-  [make "all"]
-  [make "opt"]
 ]
 depends: [
   "ocaml" {>= "4.00.0"}
