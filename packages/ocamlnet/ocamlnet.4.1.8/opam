@@ -31,7 +31,7 @@ depopts: [
   "pcre"
   "camlzip"
 ]
-install: [make "install"]
+install: ["./install.sh"]
 synopsis:
   "Internet protocols (HTTP, CGI, e-mail etc.) and helper data structures"
 description: """
