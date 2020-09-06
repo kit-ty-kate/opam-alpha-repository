@@ -1,0 +1,13 @@
+opam-version: "2.0"
+maintainer: "opam-devel@lists.ocaml.org"
+authors: "OCaml contributors"
+homepage: "http://ocaml.org/"
+install: ["cp" "-r" "." "%{lib}%/ocaml-src"]
+synopsis: "Compiler sources"
+depends: [
+  "ocaml" {= "4.12.0"}
+]
+extra-files: ["META" "md5=13fa5fa174150d988a329d9914dab3fc"]
+url {
+  src: "https://github.com/ocaml/ocaml/archive/trunk.tar.gz"
+}
