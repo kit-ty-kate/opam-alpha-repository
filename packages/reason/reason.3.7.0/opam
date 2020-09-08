@@ -19,7 +19,7 @@ depends: [
   "merlin-extend" {>= "0.4"}
   "fix"
   "result"
-  "ocaml-migrate-parsetree"
+  "ppx_derivers"
 ]
 synopsis: "Reason: Syntax & Toolchain for OCaml"
 description: """
