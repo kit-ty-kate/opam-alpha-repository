@@ -54,5 +54,5 @@ a single thread by default. This reduces the need for locks or other
 synchronization primitives. Code can be run in parallel on an opt-in basis."
 
 url {
-  src: "https://github.com/kit-ty-kate/lwt/archive/412.tar.gz"
+  src: "https://github.com/kit-ty-kate/lwt/archive/412+pr9812.tar.gz"
 }
