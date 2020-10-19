@@ -27,6 +27,5 @@ rewriters independent of a compiler version.
 """
 x-commit-hash: "92639395179ddb87bc078638870667ccd8d9157c"
 url {
-  src:
-    "https://github.com/ceastlund/ocaml-migrate-parsetree/archive/support-4.12.tar.gz"
+  src: "https://github.com/kit-ty-kate/ocaml-migrate-parsetree/archive/412.tar.gz"
 }
