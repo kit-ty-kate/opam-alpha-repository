@@ -43,5 +43,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocaml-ppx/ocamlformat.git"
 url {
-  src: "https://github.com/emillon/ocamlformat/archive/ocaml-bound-4.13.tar.gz"
+  src: "https://github.com/ocaml-ppx/ocamlformat/archive/master.tar.gz"
 }
