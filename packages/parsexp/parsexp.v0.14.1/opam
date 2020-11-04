@@ -38,5 +38,5 @@ s-expressions from files or other external sources, you should use
 parsexp_io.
 "
 url {
-  src: "https://github.com/kit-ty-kate/parsexp/archive/pr9812.tar.gz"
+  src: "https://github.com/kit-ty-kate/parsexp/archive/412.tar.gz"
 }
