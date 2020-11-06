@@ -17,6 +17,7 @@ depends: [
   "base-unix"
   "cmdliner"
   "dune" {>= "2.2.0"}
+  "dune-build-info"
   "fix"
   "fpath"
   "menhir"
