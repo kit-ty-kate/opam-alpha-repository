@@ -19,6 +19,7 @@ depends: [
   "merlin-extend" {>= "0.4"}
   "fix"
   "result"
+  "ppx_derivers"
 ]
 synopsis: "Reason: Syntax & Toolchain for OCaml"
 description: """
