@@ -20,7 +20,7 @@ and homotopy type theory) and teaching.
 depends: [
   "ocaml" {>= "4.05.0" & < "4.13"}
   "ocamlfind" {build}
-  "num"
+  "zarith" {>= "1.10"}
   "conf-findutils" {build}
 ]
 build: [
