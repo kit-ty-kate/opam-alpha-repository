@@ -44,5 +44,5 @@ B0 is distributed under the ISC license. It depends on [cmdliner][cmdliner].
 
 [cmdliner]: https://erratique.ch/software/cmdliner"""
 url {
-  archive: "https://github.com/kit-ty-kate/b0/archive/412.tar.gz"
+  archive: "https://github.com/b0-system/b0/archive/master.tar.gz"
 }
