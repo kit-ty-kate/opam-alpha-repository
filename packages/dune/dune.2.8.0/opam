@@ -49,5 +49,5 @@ depends: [
 ]
 extra-files: ["dune_no_propagation.diff" "md5=24d098fcb1f0c141c2d32a55986e5311"]
 url {
-  src: "https://github.com/kit-ty-kate/dune/archive/412.tar.gz"
+  src: "https://github.com/kit-ty-kate/dune/archive/412-empty-modules-support.tar.gz"
 }
