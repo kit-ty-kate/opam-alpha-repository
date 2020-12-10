@@ -26,5 +26,5 @@ depends: [
   "num"
 ]
 url {
-  src: "https://github.com/ocaml-batteries-team/batteries-included/archive/master.tar.gz"
+  src: "https://github.com/kit-ty-kate/batteries-included/archive/412.tar.gz"
 }
