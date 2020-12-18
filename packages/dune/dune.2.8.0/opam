@@ -47,5 +47,5 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/rgrinberg/jbuilder/archive/3766-repro.tar.gz"
+  src: "https://github.com/kit-ty-kate/dune/archive/412.tar.gz"
 }
