@@ -33,7 +33,6 @@ conflicts: [
   "jbuilder" {= "transition"}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
-patches: ["dune_no_propagation.diff"]
 build: [
   # opam 2 sets OPAM_SWITCH_PREFIX, so we don't need a hardcoded path
   ["ocaml" "configure.ml" "--libdir" lib] {opam-version < "2"}
@@ -47,7 +46,6 @@ depends: [
   "base-unix"
   "base-threads"
 ]
-extra-files: ["dune_no_propagation.diff" "md5=24d098fcb1f0c141c2d32a55986e5311"]
 url {
   src: "https://github.com/rgrinberg/jbuilder/archive/3766-repro.tar.gz"
 }
