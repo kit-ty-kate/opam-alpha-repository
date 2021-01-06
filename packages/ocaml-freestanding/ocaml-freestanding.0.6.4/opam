@@ -6,6 +6,7 @@ bug-reports: "https://github.com/mirage/ocaml-freestanding/issues/"
 license: "MIT"
 tags: "org:mirage"
 dev-repo: "git+https://github.com/mirage/ocaml-freestanding.git"
+build-env: [OPAMCLI = "2.0"]
 build: [make]
 install: [make "install" "PREFIX=%{prefix}%"]
 depends: [
