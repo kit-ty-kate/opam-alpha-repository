@@ -65,5 +65,5 @@ See https://github.com/OCamlPro/opam-user-setup
 ]
 x-commit-hash: "c9761a552380838e9f530b5c47c0ea3c47c33565"
 url {
-  src: "https://github.com/ocaml/merlin/archive/412.tar.gz"
+  src: "https://github.com/ocaml/merlin/archive/master.tar.gz"
 }
