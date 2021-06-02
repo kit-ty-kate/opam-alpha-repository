@@ -34,5 +34,5 @@ and more.  It integrates with the Tuareg mode in Emacs.
 x-commit-hash: "a5ff52bbf608e1112b5c0d41a36e3267f39f4084"
 url {
   src:
-    "https://github.com/ocaml-community/utop/archive/master.tar.gz"
+    "https://github.com/kit-ty-kate/utop/archive/413.tar.gz"
 }
