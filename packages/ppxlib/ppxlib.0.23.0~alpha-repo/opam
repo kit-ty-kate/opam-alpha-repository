@@ -32,6 +32,9 @@ depends: [
   "stdio" {with-test}
   "odoc" {with-doc}
 ]
+conflicts: [
+  "jbuilder" # https://github.com/ocaml-ppx/ppxlib/issues/251
+]
 build: [
   ["dune" "subst"] {dev}
   [
