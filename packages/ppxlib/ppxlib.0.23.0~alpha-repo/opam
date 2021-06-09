@@ -33,7 +33,7 @@ depends: [
   "odoc" {with-doc}
 ]
 conflicts: [
-  "jbuilder" # https://github.com/ocaml-ppx/ppxlib/issues/251
+  "ocaml-migrate-parsetree" {< "2.0.0"}
 ]
 build: [
   ["dune" "subst"] {dev}
