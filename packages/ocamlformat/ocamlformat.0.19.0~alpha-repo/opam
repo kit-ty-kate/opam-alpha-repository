@@ -18,6 +18,8 @@ depends: [
   "dune-build-info"
   "fix"
   "fpath"
+  "ocp-indent"
+  "either"
   "menhir" {>= "20180528"}
   "menhirLib" {>= "20200624"}
   "menhirSdk" {>= "20200624"}
