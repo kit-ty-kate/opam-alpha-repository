@@ -23,16 +23,13 @@ delimited with `(** ... *)`, and outputs HTML.
 
 depends: [
   "astring"
-  "cmdliner"
-  "cppo" {build}
-  "dune" {>= "2.7"}
+  "cmdliner" {>= "1.0.0"}
+  "cppo" {build & >= "1.1.0"}
+  "dune"
   "fpath"
   "ocaml" {>= "4.02.0" & < "4.14"}
   "result"
   "tyxml" {>= "4.3.0"}
-  "fmt"
-  "logs"
-  "re" {>= "1.7.2"}
 
   "alcotest" {dev & >= "0.8.3"}
   "markup" {dev & >= "1.0.0"}
@@ -48,5 +45,5 @@ build: [
 ]
 x-commit-hash: "c0df8ce2171fa9645a41f371429aa3ddc16de5c1"
 url {
-  src: "https://github.com/kit-ty-kate/odoc/archive/413.tar.gz"
+  src: "https://github.com/kit-ty-kate/odoc/archive/413-backport.tar.gz"
 }
