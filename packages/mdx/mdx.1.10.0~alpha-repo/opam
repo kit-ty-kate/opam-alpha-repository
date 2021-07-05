@@ -52,5 +52,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/realworldocaml/mdx.git"
 url {
-  src: "https://github.com/kit-ty-kate/mdx/archive/413.tar.gz"
+  src: "https://github.com/kit-ty-kate/mdx/archive/413-backend.tar.gz"
 }
