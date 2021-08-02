@@ -9,5 +9,5 @@ depends: [
 ]
 extra-files: ["META" "md5=a86cbc1fb202e11ff24cde77754c9d93"]
 url {
-  src: "https://github.com/ocaml/ocaml/archive/trunk.tar.gz"
+  src: "https://github.com/ocaml/ocaml/archive/4.13.tar.gz"
 }
