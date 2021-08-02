@@ -19,7 +19,7 @@ depends: [
   "zarith" {>= "1.4"}
 ]
 extra-files: [
-  ["413.patch" "md5=cd4584ce65af700ed1fd7ef2b264bffc"]
+  ["413.patch" "md5=b078c0291dd525b26437f0aac55905e2"]
 ]
 synopsis: "Fixed-size bitvectors and modular arithmetic, based on Zarith"
 

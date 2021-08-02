@@ -6,7 +6,7 @@ diff -ru a/lib/bitvec/bitvec.ml b/lib/bitvec/bitvec.ml
     version of OCaml will create a closure)
  *)
 -external (mod) : 'a m -> modulus -> 'a = "%apply"
-+external (mod) : 'a m -> modulus -> 'a = "%identity"
++type 'a mod_result = modulus -> 'a external (mod) : 'a m -> 'a mod_result = "%identity"
  
  let modulus w = {
    m = Z.(one lsl w - one);
@@ -18,7 +18,7 @@ diff -ru a/lib/bitvec/bitvec.mli b/lib/bitvec/bitvec.mli
      known at compile time.
  *)
 -external (mod) : 'a m -> modulus -> 'a = "%apply"
-+external (mod) : 'a m -> modulus -> 'a = "%identity"
++type 'a mod_result = modulus -> 'a external (mod) : 'a m -> 'a mod_result = "%identity"
  
  module type S = sig
    (** an abstract representation of an operation modulo some number.*)
