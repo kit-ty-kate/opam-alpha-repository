@@ -9,33 +9,19 @@ patches: [
   "413.patch" {ocaml:version >= "4.13"}
 ]
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-core-theory"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-core-theory"]]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "core_kernel" {>= "v0.14" & < "v0.15"}
-  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "oasis" {build & >= "0.4.7"}
-  "bap-knowledge" {= "2.3.0"}
-  "bitvec" {= "2.3.0"}
-  "bitvec-binprot" {= "2.3.0"}
-  "bitvec-order" {= "2.3.0"}
-  "bitvec-sexp" {= "2.3.0"}
+  "zarith" {>= "1.4"}
 ]
 extra-files: [
   ["413.patch" "md5=cd4584ce65af700ed1fd7ef2b264bffc"]
 ]
-synopsis: "BAP Semantics Representation"
-description: """
-The Core Theory is an intermediate language that is designed to
-express the semantics of computer programs. It focuses on programs
-that are represented in binary machine code and is capable of an
-accurate representation of the architectural and micro-architectural
-details of the program behavior.
-"""
+synopsis: "Fixed-size bitvectors and modular arithmetic, based on Zarith"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.3.0.tar.gz"
