@@ -20,6 +20,7 @@ depends: [
   "cppo" {build & >= "1.1.0"}
   "dune" {>= "1.8.0"}
   "dune-configurator"
+  "bigarray-compat"
   "mmap" {>= "1.1.0" & "os" != "win32"} # mmap is needed as long as Lwt supports OCaml < 4.06.0.
   "ocaml" {("os" != "win32 " & >= "4.03.0" | >= "4.06.0")}
   ("ocaml" {>= "4.08.0"} | "ocaml-syntax-shims")
@@ -56,5 +57,5 @@ Meanwhile, OCaml code, including code creating and waiting on promises, runs in
 a single thread by default. This reduces the need for locks or other
 synchronization primitives. Code can be run in parallel on an opt-in basis."
 url {
-  src: "https://github.com/kit-ty-kate/lwt/archive/500.tar.gz"
+  src: "https://github.com/kit-ty-kate/lwt/archive/500-again.tar.gz"
 }
