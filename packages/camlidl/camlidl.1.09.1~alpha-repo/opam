@@ -24,5 +24,5 @@ extra-files: [
   ["META" "md5=23b140345606a15a304212e930cadaa7"]
 ]
 url {
-  src: "https://github.com/xavierleroy/camlidl/archive/master.tar.gz"
+  src: "https://github.com/kit-ty-kate/camlidl/archive/500.tar.gz"
 }
