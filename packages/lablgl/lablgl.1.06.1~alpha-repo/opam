@@ -11,6 +11,7 @@ homepage: "https://github.com/garrigue/lablgl"
 bug-reports: "https://github.com/garrigue/lablgl/issues"
 depends: [
   "ocaml" {>= "4.03"}
+  "ocamlfind" {build}
 ]
 flags: light-uninstall
 build: [
