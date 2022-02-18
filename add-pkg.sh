@@ -15,5 +15,5 @@ while test "$#" -ge 1; do
   target=$pkg/$pkg.${last_version}.1~alpha-repo
 
   mkdir -p "$target"
-  opam show --raw "$pkg" > "$target/opam"
+  opam show --raw "$pkg" | grep -v "^name: " | grep -v "^version: " > "$target/opam"
 done
