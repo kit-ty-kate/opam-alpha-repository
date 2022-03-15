@@ -65,5 +65,5 @@ install: [
 ]
 dev-repo: "git+https://github.com/inria-parkas/sundialsml"
 url {
-  src: "https://github.com/kit-ty-kate/sundialsml.git#414"
+  src: "git+https://github.com/kit-ty-kate/sundialsml.git#414"
 }
