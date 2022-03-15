@@ -57,5 +57,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/mirage/ocaml-qcow.git"
 url {
-  src: "git+https://github.com/mirage/ocaml-qcow.git#414"
+  src: "git+https://github.com/kit-ty-kate/ocaml-qcow.git#414"
 }
