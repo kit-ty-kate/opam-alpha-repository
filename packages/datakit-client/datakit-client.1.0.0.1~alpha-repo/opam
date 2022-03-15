@@ -17,6 +17,7 @@ depends: [
   "dune" {>= "1.7"}
   "astring"
   "fmt"
+  "result"
   "lwt" {>= "2.6.0"}
   "cstruct" {> "2.2.0"}
 ]
