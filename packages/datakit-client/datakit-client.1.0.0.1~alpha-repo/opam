@@ -16,7 +16,6 @@ depends: [
   "ocaml"
   "dune" {>= "1.7"}
   "astring"
-  "result" {< "1.5"}
   "fmt"
   "lwt" {>= "2.6.0"}
   "cstruct" {> "2.2.0"}
