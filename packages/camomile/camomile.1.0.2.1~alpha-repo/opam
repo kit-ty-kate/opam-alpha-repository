@@ -16,6 +16,7 @@ depends: [
   "ocaml" {>= "4.03"}
   "stdlib-shims"
   "camlp-streams"
+  "bigarray-compat"
 ]
 available: arch != "ppc64"
 build: [
