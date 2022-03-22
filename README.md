@@ -10,7 +10,7 @@ To activate this repository in your current opam switch:
 opam repo add alpha git://github.com/kit-ty-kate/opam-alpha-repository.git
 ```
 
-This will add the `beta` remote as a non-default extra source of opam
+This will add the `alpha` remote as a non-default extra source of opam
 packages.
 
 ## Side note on the OCaml Beta Repository
