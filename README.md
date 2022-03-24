@@ -7,7 +7,7 @@ non-upstreamed patches/branches.
 
 To activate this repository in your current opam switch:
 ```
-opam repo add alpha git://github.com/kit-ty-kate/opam-alpha-repository.git
+opam repo add alpha git+https://github.com/kit-ty-kate/opam-alpha-repository.git
 ```
 
 This will add the `alpha` remote as a non-default extra source of opam
@@ -22,5 +22,5 @@ as well first.
 For instance, to install OCaml 4.10.0beta1 and get access to opam-alpha-repository
 right off the bat:
 ```
-opam switch create 4.10.0+beta1 --repo=default,beta=git://github.com/ocaml/ocaml-beta-repository.git,alpha=git://github.com/kit-ty-kate/opam-alpha-repository.git
+opam switch create 4.10.0+beta1 --repo=default,beta=git+https://github.com/ocaml/ocaml-beta-repository.git,alpha=git+https://github.com/kit-ty-kate/opam-alpha-repository.git
 ```
