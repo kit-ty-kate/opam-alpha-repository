@@ -30,5 +30,5 @@ post-messages:
 dev-repo: "git+https://github.com/janestreet/memtrace.git"
 url {
   src:
-    "https://github.com/samoht/memtrace#500"
+    "git+https://github.com/samoht/memtrace#500"
 }
