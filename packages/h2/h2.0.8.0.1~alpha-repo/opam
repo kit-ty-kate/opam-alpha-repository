@@ -31,5 +31,5 @@ build: ["dune" "build" "-p" name "-j" jobs]
 dev-repo: "git+https://github.com/anmonteiro/ocaml-h2.git"
 url {
   src:
-    "git+https://github.com/anmonteiro/ocaml-h2#93c7e071a0bf8e0b7360cc9d7dc4532cbe0943e9"
+    "git+https://github.com/anmonteiro/ocaml-h2#11d3b67bc108e461c1ffad909a02481b239919c2"
 }
