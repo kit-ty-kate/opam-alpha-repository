@@ -49,5 +49,5 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/dra27/dune/archive/3.9.3-5.0.0.tar.gz"
+  src: "https://github.com/dra27/dune/archive/2.9.3-5.0.0.tar.gz"
 }
