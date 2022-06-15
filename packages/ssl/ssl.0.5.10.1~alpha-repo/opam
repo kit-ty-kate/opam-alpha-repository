@@ -17,5 +17,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/savonet/ocaml-ssl.git"
 url {
-  src: "https://github.com/savonet/ocaml-ssl/archive/master.tar.gz"
+  src: "https://github.com/dra27/ocaml-ssl/archive/remove-out-of-heap-pointer.tar.gz"
 }
