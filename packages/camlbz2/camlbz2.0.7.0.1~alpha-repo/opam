@@ -1,0 +1,13 @@
+opam-version: "2.0"
+synopsis: "Bindings for bzip2"
+maintainer: "https://github.com/ocaml/opam-repository/issues"
+authors: ["Olivier Andrieu" "Stefano Zacchiroli"]
+license: "LGPL-2.1-or-later WITH OCaml-LGPL-linking-exception"
+homepage: "https://gitlab.com/irill/camlbz2"
+bug-reports: "https://gitlab.com/irill/camlbz2/issues"
+depends: ["ocaml" "stdlib-shims" "conf-libbz2"]
+build: ["dune" "build" "-p" name "-j" jobs]
+dev-repo: "git+https://gitlab.com/irill/camlbz2.git"
+url {
+  src: "https://github.com/kit-ty-kate/camlbz2/archive/ocaml5+fix-dune+fix-macos.tar.gz"
+}
