@@ -45,5 +45,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocsigen/js_of_ocaml.git"
 url {
-  src: "https://github.com/ocsigen/js_of_ocaml/archive/ocaml-5.tar.gz"
+  src: "https://github.com/novemberkilo/js_of_ocaml/archive/ocaml-5.tar.gz"
 }
