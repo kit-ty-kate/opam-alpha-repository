@@ -1,0 +1,43 @@
+opam-version: "2.0"
+synopsis:
+  "The base MirageOS runtime library, part of every MirageOS unikernel"
+description:
+  "A bundle of useful runtime functions for applications built with MirageOS"
+maintainer: ["anil@recoil.org" "thomas@gazagnaire.org"]
+authors: [
+  "Thomas Gazagnaire"
+  "Anil Madhavapeddy"
+  "Gabriel Radanne"
+  "Mindy Preston"
+  "Thomas Leonard"
+  "Nicolas Ojeda Bar"
+  "Dave Scott"
+  "David Kaloper"
+  "Hannes Mehnert"
+  "Richard Mortier"
+]
+license: "ISC"
+tags: ["org:mirage" "org:xapi-project"]
+homepage: "https://github.com/mirage/mirage"
+doc: "https://mirage.github.io/mirage/"
+bug-reports: "https://github.com/mirage/mirage/issues/"
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "2.9.0"}
+  "ipaddr" {>= "5.0.0"}
+  "functoria-runtime" {= version}
+  "fmt" {>= "0.8.4"}
+  "logs"
+  "lwt" {>= "4.0.0"}
+  "alcotest" {with-test}
+]
+build: [
+  ["dune" "subst"] {dev}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+dev-repo: "git+https://github.com/mirage/mirage.git"
+url {
+  src: "https://github.com/kit-ty-kate/mirage/archive/500.tar.gz"
+}
+x-commit-hash: "fc13da4fe27419bb15792803e46defd76a6cc0da"
