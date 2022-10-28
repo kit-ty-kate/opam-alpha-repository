@@ -1,0 +1,18 @@
+opam-version: "2.0"
+synopsis: "Read, write and modify PDF files"
+maintainer: "contact@coherentgraphics.co.uk"
+authors: "John Whitington"
+license: "LGPL-2.1-or-later WITH OCaml-LGPL-linking-exception"
+homepage: "http://github.com/johnwhitington/camlpdf"
+bug-reports: "http://github.com/johnwhitington/camlpdf/issues"
+depends: [
+  "ocaml" {>= "4.10"}
+  "ocamlfind" {build}
+  "conf-which" {build}
+]
+build: make
+install: [make "install"]
+dev-repo: "git://github.com/johnwhitington/camlpdf"
+url {
+  src: "https://github.com/johnwhitington/camlpdf/archive/master.tar.gz"
+}
