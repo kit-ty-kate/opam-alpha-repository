@@ -85,5 +85,5 @@ depends: [
 build: ["dune" "build" "-p" name "-j" jobs]
 dev-repo: "git+https://github.com/aantron/dream.git"
 url {
-  src: "https://github.com/novemberkilo/dream/archive/master.tar.gz"
+  src: "https://github.com/kit-ty-kate/dream/releases/download/dream.1.0.0.1-alpha-repo/dream-1.0.0-alpha4.tar.gz"
 }
