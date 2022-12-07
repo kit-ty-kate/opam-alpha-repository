@@ -13,6 +13,13 @@ opam repo add alpha git+https://github.com/kit-ty-kate/opam-alpha-repository.git
 This will add the `alpha` remote as a non-default extra source of opam
 packages.
 
+## Adding packages
+To add an installed/pinned package:
+```
+./add-pkg.sh PACKAGE
+```
+Then modify the `src` field, remove the `checksum` and open a PR.
+
 ## Side note on the OCaml Beta Repository
 
 To be able to install beta or dev versions of the compiler you will have to
