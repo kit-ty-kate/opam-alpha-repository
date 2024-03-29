@@ -1,0 +1,36 @@
+opam-version: "2.0"
+synopsis:
+  "Compiler libraries for Melange, a toolchain to produce JavaScript from OCaml"
+maintainer: "Antonio Nuno Monteiro <anmonteiro@gmail.com>"
+authors: "Antonio Nuno Monteiro <anmonteiro@gmail.com>"
+license: "LGPL-2.1-or-later WITH OCaml-LGPL-linking-exception"
+homepage: "https://github.com/melange-re/melange-compiler-libs"
+bug-reports: "https://github.com/melange-re/melange-compiler-libs/issues"
+depends: [
+  "dune" {>= "3.0"}
+  "ocaml" {>= "5.2.0" & < "5.3.0"}
+  "menhir" {>= "20201214"}
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/melange-re/melange-compiler-libs.git"
+url {
+  src:
+    "https://github.com/melange-re/melange-compiler-libs/archive/dc042ce26dcd2e3871466def46b7fb52c99a9f00.tar.gz"
+  checksum: [
+    "sha256=ec1a87c056cc5b0672f1feed2ff55de9499c87926c183cb479476f934bf1982d"
+  ]
+}
