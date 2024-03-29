@@ -29,8 +29,8 @@ build: [
 dev-repo: "git+https://github.com/melange-re/melange-compiler-libs.git"
 url {
   src:
-    "https://github.com/melange-re/melange-compiler-libs/archive/dc042ce26dcd2e3871466def46b7fb52c99a9f00.tar.gz"
+    "https://github.com/melange-re/melange-compiler-libs/archive/55017f5bc6628926df303709f2220f3278d0cd32.tar.gz"
   checksum: [
-    "sha256=ec1a87c056cc5b0672f1feed2ff55de9499c87926c183cb479476f934bf1982d"
+    "sha256=49dbb6aa14250440a5284b20b6f604efca0025e0c6ca3b257f5d5f4b13e29f50"
   ]
 }
