@@ -21,7 +21,7 @@ build: [
 dev-repo: "git+https://github.com/thierry-martinez/stdcompat.git"
 url {
   src:
-    "https://github.com/kit-ty-kate/stdcompat/archive/5d494d719c103c97ba24d3c402edc31a71c64228.tar.gz"
+    "https://github.com/kit-ty-kate/stdcompat/archive/58b6d90fc53333f5e8112d42f96093802678c030.tar.gz"
   checksum:
-    "sha256=1ea99c7483da40b087a2d68ef71403f7459ecb21b98fe61ea0211ddaa0415a8d"
+    "sha256=b263447da99c80289bb9f5d2d1131044dda6692853bf6e967f70ed0facc14fb7"
 }
