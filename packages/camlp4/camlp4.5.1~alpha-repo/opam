@@ -36,9 +36,9 @@ build: [
 install: [make "install" "install-META"]
 dev-repo: "git+https://github.com/camlp4/camlp4.git"
 url {
-  src: "https://github.com/camlp4/camlp4/archive/15c79f48acee3f1db1ec68e6b13493254413d55e.tar.gz"
+  src: "https://github.com/camlp4/camlp4/archive/de8ca2cbd8a0101cb223a87d5ae10f023449f934.tar.gz"
   checksum: [
-    "md5=64d73eab19f9edbe2d0dd3a949ef815a"
-    "sha512=720cf891f6121f350d3e0727d87e42088458494cba6f3ad3d0c0b542880e5d1fd599db8ff652dcd4f9219c1604b6e76bbf108f32906a39f96298f22019a31e0b"
+    "md5=8ae03cb5ba8e6907f936cef68700a4b3"
+    "sha512=c5a84dbfe3e12a943940f2b409dc37597a05ccbc339d8ea6ad9b3327d72cda8f20678d19b6b6ef3866d8d7b72532a6a7a5d8115412f99110d72e7a973e1e34bc"
   ]
 }
