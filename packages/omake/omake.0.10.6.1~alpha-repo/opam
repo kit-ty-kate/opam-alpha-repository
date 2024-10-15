@@ -9,7 +9,6 @@ depends: [
   "ocaml" {>= "4.03.0"}
   "ocamlfind"
 ]
-conflicts: ["base-effects"]
 build: [
   ["./configure" "-prefix" "%{prefix}%"]
   [make]
