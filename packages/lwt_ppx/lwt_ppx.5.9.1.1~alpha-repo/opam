@@ -33,7 +33,7 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocsigen/lwt.git"
 url {
-  src: "https://github.com/ocsigen/lwt/archive/4f875bef62602cf52b5b6a06d29427206e5034f2.tar.gz"
+  src: "https://github.com/patricoferris/lwt/archive/4f875bef62602cf52b5b6a06d29427206e5034f2.tar.gz"
   checksum: [
     "md5=753533c2805e62c166685cfd808ecd47"
   ]
