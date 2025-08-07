@@ -1,0 +1,45 @@
+opam-version: "2.0"
+synopsis: "PPX deriver for type representations"
+description: "PPX deriver for type representations"
+maintainer: "thomas@gazagnaire.org"
+authors: ["Thomas Gazagnaire" "Craig Ferguson"]
+license: "ISC"
+homepage: "https://github.com/mirage/repr"
+doc: "https://mirage.github.io/repr"
+bug-reports: "https://github.com/mirage/repr/issues"
+depends: [
+  "dune" {>= "2.7"}
+  "repr" {= version}
+  "ppxlib" {>= "0.36.0"}
+  "ppx_deriving"
+  "fmt"
+  "hex" {with-test}
+  "optint" {>= "0.1.0" & with-test}
+  "alcotest" {>= "1.4.0" & with-test}
+  "odoc" {with-doc}
+]
+conflicts: [
+  "ocaml-migrate-parsetree" {= "1.7.1"}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/mirage/repr.git"
+url {
+  src:
+    "https://github.com/patricoferris/repr/archive/ebeeae1d5b8fd2a50df2adaaa35e536d682cb6f2.tar.gz"
+  checksum: [
+    "md5=5e09e4fbdcfcef1c727a1b7f5c8bcd39"
+  ]
+}
