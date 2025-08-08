@@ -36,8 +36,8 @@ build: [
 ]
 dev-repo: "git+https://github.com/aantron/bisect_ppx.git"
 url {
-  src: "https://github.com/patricoferris/bisect_ppx/archive/5.2.tar.gz"
+  src: "https://github.com/patricoferris/bisect_ppx/archive/f35fdf4bdcb82c308d70f7c9c313a77777f54bdf.tar.gz"
   checksum: [
-    "md5=04ed83f8a16a605255b47ba912581a1d"
+    "md5=3a7da7c2e52ede0f33a36884989e7aca"
   ]
 }
