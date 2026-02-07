@@ -54,6 +54,7 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocsigen/lwt.git"
 url {
-  src: "git+file:///home/kit_ty_kate/work/lwt#ocaml-5.5"
+  src: "https://github.com/kit-ty-kate/lwt/archive/67a62d8ce75919ae552eead2a737bfb387410046.tar.gz"
+  checksum: "md5=88d093344a31ccb7fc912b193472d5ef"
 }
 x-maintenance-intent: ["(latest)"]

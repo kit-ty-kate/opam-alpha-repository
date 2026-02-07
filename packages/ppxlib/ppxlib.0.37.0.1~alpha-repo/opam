@@ -52,6 +52,7 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocaml-ppx/ppxlib.git"
 url {
-  src: "git+https://github.com/patricoferris/ppxlib.git#5.5-migrations"
+  src: "https://github.com/patricoferris/ppxlib/archive/2cd397da41a09b8ea196d777c06e107c71b5d030.tar.gz"
+  checksum: "md5=cd0c83d59fc0c83d8a8ff63a91004135"
 }
 x-maintenance-intent: ["(latest)"]
