@@ -1,0 +1,47 @@
+opam-version: "2.0"
+synopsis: "Industrial strength alternative to OCaml's standard library"
+description: """\
+The Core suite of libraries is an industrial strength alternative to
+OCaml's standard library that was developed by Jane Street, the
+largest industrial user of OCaml.
+
+This is the system-independent part of Core. Unix-specific parts were moved to [core_unix]."""
+maintainer: "Jane Street developers"
+authors: "Jane Street Group, LLC"
+license: "MIT"
+homepage: "https://github.com/janestreet/core"
+doc: "https://ocaml.janestreet.com/ocaml-core/latest/doc/core/index.html"
+bug-reports: "https://github.com/janestreet/core/issues"
+depends: [
+  "ocaml" {>= "5.1.0"}
+  "base" {>= "v0.17" & < "v0.18~"}
+  "base_bigstring" {>= "v0.17" & < "v0.18~"}
+  "base_quickcheck" {>= "v0.17" & < "v0.18~"}
+  "bin_prot" {>= "v0.17" & < "v0.18~"}
+  "fieldslib" {>= "v0.17" & < "v0.18~"}
+  "jane-street-headers" {>= "v0.17" & < "v0.18~"}
+  "jst-config" {>= "v0.17" & < "v0.18~"}
+  "ppx_assert" {>= "v0.17" & < "v0.18~"}
+  "ppx_base" {>= "v0.17" & < "v0.18~"}
+  "ppx_diff" {>= "v0.17" & < "v0.18~"}
+  "ppx_hash" {>= "v0.17" & < "v0.18~"}
+  "ppx_inline_test" {>= "v0.17" & < "v0.18~"}
+  "ppx_jane" {>= "v0.17" & < "v0.18~"}
+  "ppx_optcomp" {>= "v0.17" & < "v0.18~"}
+  "ppx_sexp_conv" {>= "v0.17" & < "v0.18~"}
+  "ppx_sexp_message" {>= "v0.17" & < "v0.18~"}
+  "sexplib" {>= "v0.17" & < "v0.18~"}
+  "splittable_random" {>= "v0.17" & < "v0.18~"}
+  "stdio" {>= "v0.17" & < "v0.18~"}
+  "time_now" {>= "v0.17" & < "v0.18~"}
+  "typerep" {>= "v0.17" & < "v0.18~"}
+  "variantslib" {>= "v0.17" & < "v0.18~"}
+  "dune" {>= "3.11.0"}
+]
+available: arch != "x86_32"
+build: ["dune" "build" "-p" name "-j" jobs]
+dev-repo: "git+https://github.com/janestreet/core.git"
+url {
+  src: "https://github.com/kit-ty-kate/core/archive/953855d98b3cf141d224345c885a7f1749c3a5e1.tar.gz"
+  checksum: "md5=f888c5b463bde989244c9d2e08d476e5"
+}
