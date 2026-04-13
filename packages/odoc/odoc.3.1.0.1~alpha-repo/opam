@@ -66,6 +66,6 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocaml/odoc.git"
 url {
-  src: "https://github.com/panglesd/odoc/archive/7e20799cd08a44798ca49f7487737d866ef6b00d.tar.gz"
-  checksum: "md5=782ae21c3cb9c1ee8cba01bae2399288"
+  src: "https://github.com/panglesd/odoc/archive/9a3678f1b5cf772660922710522c722ac92c571d.tar.gz"
+  checksum: "md5=84e9b33de1c16fb7182e0200eedc7288"
 }
