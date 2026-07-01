@@ -26,5 +26,8 @@ depexts: [
 ]
 dev-repo: "git+https://github.com/pqwy/ocaml-papi.git"
 url {
-  src: "git+https://github.com/kit-ty-kate/ocaml-papi.git#414"
+  src: "https://github.com/kit-ty-kate/ocaml-papi/archive/7a95ee2a898edf1b7e4b3acaeefe33a90880de75.tar.gz"
+  checksum: [
+    "md5=e05c2befda9313de60e45a2583e904a6"
+  ]
 }
