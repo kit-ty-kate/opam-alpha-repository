@@ -1,0 +1,27 @@
+opam-version: "2.0"
+synopsis: "Command-line edition tool for handling the opam file syntax"
+description: """\
+opam-ed can read and write files in the general opam syntax. It provides a small CLI with some useful commands for mechanically extracting or modifying the file contents.
+
+The specification for the syntax itself is available at:
+    http://opam.ocaml.org/doc/Manual.html#Common-file-format"""
+maintainer: "Louis Gesbert <louis.gesbert@ocamlpro.com>"
+authors: "Louis Gesbert <louis.gesbert@ocamlpro.com>"
+license: "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
+homepage: "https://github.com/AltGr/opam-ed"
+bug-reports: "https://github.com/AltGr/opam-ed/issues"
+depends: [
+  "ocaml" {>= "4.03.0"}
+  "dune" {>= "2.0"}
+  "cmdliner" {>= "2.0.0"}
+  "opam-file-format" {>= "2.1.1"}
+]
+build: ["dune" "build" "-p" name "-j" jobs]
+run-test: ["dune" "runtest" "-p" name "-j" jobs]
+dev-repo: "git+https://github.com/AltGr/opam-ed.git"
+url {
+  src:
+    "https://github.com/kit-ty-kate/opam-ed/archive/531ac98d4a0ded7b31d27f87f82ae2611697324f.tar.gz"
+  checksum:
+    "sha256=15013d1ade2ca50cf79fc180b2663925e16fc7f57ef59fb6bf3102d58299a9af"
+}
