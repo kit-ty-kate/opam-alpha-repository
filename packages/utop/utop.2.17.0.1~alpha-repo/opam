@@ -41,7 +41,6 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocaml-community/utop.git"
 url {
-  src: "https://github.com/kit-ty-kate/utop/archive/64f4486318c128f531f95fddd1f19fa5b0c95191.tar.gz"
-  checksum: ["md5=0b48e7d1f0e4bcd5ad47982dfc8d5f28"]
+  src: "https://github.com/kit-ty-kate/utop/archive/235794c9c4856c6ba44185ee9c7a3dcc09045772.tar.gz"
+  checksum: ["md5=b0cbad1379ff250c61c8c7219213b225"]
 }
-x-commit-hash: "918cd14b1e1e78f23010ade3accd628680e96d28"
