@@ -34,7 +34,6 @@ build: [
 ]
 dev-repo: "git+https://github.com/ocsigen/js_of_ocaml.git"
 url {
-  src: "https://github.com/ocsigen/js_of_ocaml/archive/8b46f0628091b73513141a010c3ac3914a872395.tar.gz"
-  checksum: ["md5=018f9e04eb2ecd83bc0d84806a410faf"]
+  src: "https://github.com/ocsigen/js_of_ocaml/archive/380f58c74467f01301f93ac8638d417ab911cdd3.tar.gz"
+  checksum: ["md5=fedf5c3ac0dddb7084dc412f8897c770"]
 }
-x-maintenance-intent: ["(latest)"]
